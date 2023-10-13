@@ -25,7 +25,7 @@
             width: 500px;
 
             display: flex;
-            align-items: flex-start;
+            /* align-items: flex-start; */
 
             /* position: relative; */
             /*
@@ -39,7 +39,8 @@
             -Then give it position: relative; and give position: absolute; to four boxes of items class.
             */
             justify-content: center;
-            align-items: center;
+            /* align-items: center; */
+
         }
 
         .items {
@@ -78,8 +79,8 @@
             bottom: 0;
             left: 0;
         }
-        
-        .square{
+
+        .square {
             width: 300px;
             height: 300px;
             border: 2px dotted black;
@@ -87,27 +88,50 @@
             /* margin: 0 auto; */
             position: relative;
         }
-        .movable-box{
+
+        .movable-box {
             width: 50px;
             height: 50px;
             border: 2px solid red;
-            background-color: ;
+            background-color: lightblue;
+            font-size: 14px;
+            padding: 5px;
+
+            /* fixed position */
+            /* position: fixed;
+            top: 0;
+            right: 0; */
+
+            /* Sticky position */
+            position: sticky;
+            top: 0px;
+            left: 0px;
+            /*Will work when scroll horizontal */
         }
     </style>
 </head>
 
 <body>
     <h1>CSS: Align & Position Concept</h1>
-    <div class="movable-box"></div>
+    <div class="container sticky">
+        <div class="movable-box">Movable</div>
+        <div class="square">
+            <div class="items items-1">One</div>
+            <div class="items items-2">Two</div>
+            <div class="items items-3">Three</div>
+            <div class="items items-4">Four</div>
+        </div>
+    </div>
+
+    <hr>
     <div class="container">
 
         <div class="square">
-        <div class="items items-1">One</div>
-        <div class="items items-2">Two</div>
-        <div class="items items-3">Three</div>
-        <div class="items items-4">Four</div>
-    </div>
-    </div>
+            <div class="items items-1">One</div>
+            <div class="items items-2">Two</div>
+            <div class="items items-3">Three</div>
+            <div class="items items-4">Four</div>
+        </div>
 </body>
 
 </html>
