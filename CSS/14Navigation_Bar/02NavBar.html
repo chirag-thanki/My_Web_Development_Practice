@@ -39,6 +39,7 @@
             position: absolute;
             top: 38px;
             right: 50px;
+            display: none;
         }
 
         .input {
@@ -74,6 +75,17 @@
                 display: block;
 
         }
+
+        @media (max-width:900px){
+            .bar{
+                display: block;
+            }
+            nav ul{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
     </style>
 </head>
 
@@ -88,7 +100,7 @@
                 <li><a href="#">Contact Us</a></li>
             </ul>
 
-            <i class="fa-solid fa-bars fa-beat bar"></i>
+            <i class="fa-solid fa-bars bar"></i>
             <input type="checkbox" class="input">
         
 
