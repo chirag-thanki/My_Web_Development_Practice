@@ -5,16 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Before & After</title>
     <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: aliceblue;
+        }
+
         header{
             display: flex;
             flex-direction: column;
+        }
+
+        .ul{
+            display: flex;
+    
+        }
+
+        .item{
+            list-style-type: none;
+            padding: 5px 10px;
+            font-size: 30px;
+        }
+
+        section{
+            margin: 10px;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <ul>
+            <ul class="ul">
                 <li class="item">Home</li>
                 <li class="item">Products</li>
                 <li class="item">Services</li>
