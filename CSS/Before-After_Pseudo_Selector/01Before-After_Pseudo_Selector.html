@@ -1,39 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Before & After</title>
     <style>
-        body{
+        body {
             margin: 0;
             padding: 0;
             background-color: black;
             color: aliceblue;
         }
 
-        header{
+        header {
             display: flex;
             flex-direction: column;
         }
 
-        .ul{
+        .ul {
             display: flex;
-    
+
         }
 
-        .item{
+        .item {
             list-style-type: none;
             padding: 5px 10px;
             font-size: 30px;
         }
 
-        section{
+        section {
             margin: 10px;
             padding: 10px;
+            align-items: center;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            
+        }
+
+        section::before{
+            content: "This is a Content";
         }
     </style>
 </head>
+
 <body>
     <header>
         <nav class="navbar">
@@ -47,8 +61,11 @@
 
         <section>
             <h3>Welcome to Coding World</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae qui, repellat autem molestias tempora nisi laboriosam praesentium numquam eum fugiat beatae nihil? Dolor officiis, esse voluptas at repudiandae eveniet repellendus!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae qui, repellat autem molestias tempora nisi
+                laboriosam praesentium numquam eum fugiat beatae nihil? Dolor officiis, esse voluptas at repudiandae
+                eveniet repellendus!</p>
         </section>
     </header>
 </body>
+
 </html>
